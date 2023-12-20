@@ -1,0 +1,8 @@
+<!-- Modal Container (Backdrop) -->
+<div id="modal" class="fixed inset-0">
+
+    {% if request.headers.get('modal') == 'edit' %}
+    {% include 'partials/edit_modal.html' %}
+    {% endif %}
+
+</div>

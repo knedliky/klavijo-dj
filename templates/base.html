@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for_static_asset('static', 'css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for_static_asset('static', 'css/spinner.css') }}" rel="stylesheet">
+    <script src="{{ url_for_static_asset('static', 'scripts/htmx.js') }}"></script>
+    <script src="{{ url_for_static_asset('static', 'scripts/functions.js') }}"></script>
+    <title>{{ title }}</title>
+</head>
+
+<body class="overflow-hidden">
+
+    {% block content %}
+
+    <div>This is a demo of Klavijo DJ</div>
+
+    {% endblock content %}
+
+</body>
+
+</html>

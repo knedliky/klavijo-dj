@@ -1,0 +1,23 @@
+<div id="gpt-playlist" class="flex flex-col gap-2">
+    <div class="text-4xl text-slate-900">{{playlist.playlist.playlist_title}}</div>
+    <div class="text-slate-900 italic">{{playlist.description}}</div>
+    <table id="table" class="table-auto w-full">
+        <thead class="bg-slate-900 text-left text-slate-50 rounded-t-md">
+            <tr>
+                <th class="font-normal px-4 py-2">Song Title</th>
+                <th class="font-normal px-4 py-2">Artist</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for track in playlist.playlist.tracks %}
+            <tr class="hover:bg-slate-50 active:bg-slate-100 focus:bg-slate-200" tabindex="0" hx-get="/buttons"
+                hx-target="#buttons" hx-swap="innerHTML swap:100ms">
+                <td class="px-4 py-2 border-t">{{ track.title }}</td>
+                <td class="px-4 py-2 border-t">
+                    {{ track.artist }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

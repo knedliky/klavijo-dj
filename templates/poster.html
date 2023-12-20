@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="poster" class="flex items-center justify-center h-screen" hx-get="/db/init" hx-trigger="load">
+    {% include 'cover/cover.html' %}
+    {% include 'content/content.html' %}
+</div>
+
+{% endblock content %}
