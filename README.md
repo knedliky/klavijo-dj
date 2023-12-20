@@ -8,9 +8,9 @@ This project is aimed at integrating GPT, Spotify and Klaviyo into one applicati
 
 You will need to create accounts for several platforms.
 
-1. [OpenAI]('https://platform.openai.com/'): GPT is used to generate moods from your customers favourite items or keywords you specify in order to generate playlists, that are then converted into real Spotify playlists!
-2. [Spotify]('https://developer.spotify.com/documentation/web-api'): The Web API is used to search the tracks that GPT recommends. If GPT hallucinates, no worries! We will just skip that track.
-3. [Klaviyo]('https://developers.klaviyo.com/en/reference/api_overview'): Then in order to distribute these playlists to your special customers, you will need to activate your Klaviyo APIs through the developer portal
+1. [OpenAI](https://platform.openai.com/): GPT is used to generate moods from your customers favourite items or keywords you specify in order to generate playlists, that are then converted into real Spotify playlists!
+2. [Spotify](https://developer.spotify.com/documentation/web-api): The Web API is used to search the tracks that GPT recommends. If GPT hallucinates, no worries! We will just skip that track.
+3. [Klaviyo](https://developers.klaviyo.com/en/reference/api_overview): Then in order to distribute these playlists to your special customers, you will need to activate your Klaviyo APIs through the developer portal
 
 ## Setup
 
@@ -77,6 +77,10 @@ Testing the event will then follow a flow similar to the one below. Eventually e
 
 ![Alt text](dev/email.png)
 
-## Notes
+## Extra Documentation
 
-Find scripts in the [Jupyter Notebook]('./notebooks/klaviyo_client.ipynb') for easier persual and line by line testing.
+You can find Python scripts in the [Jupyter Notebook]('./notebooks/klaviyo_client.ipynb') for easier perusal and line by line testing.
+
+You can find the flow architecture [here](https://app.eraser.io/workspace/gTaeQN7Ub0R4l6eG5oUt?origin=share)
+
+You can find the Figma mock up [here](https://www.figma.com/file/2SR0z813DlVqaLcJPhJjEa/Klaviyo-DJ?type=design&node-id=0%3A1&mode=design&t=vo4dKx9SkfOaPJto-1)
