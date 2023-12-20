@@ -79,7 +79,7 @@ Testing the event will then follow a flow similar to the one below. Eventually e
 
 ## Extra Documentation
 
-You can find Python scripts in the [Jupyter Notebook]('./notebooks/klaviyo_client.ipynb') for easier perusal and line by line testing.
+You can find Python scripts in the [Jupyter Notebook]('notebooks/klaviyo_client.ipynb') for easier perusal and line by line testing.
 
 You can find the flow architecture [here](https://app.eraser.io/workspace/gTaeQN7Ub0R4l6eG5oUt?origin=share)
 
